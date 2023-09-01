@@ -16,6 +16,7 @@ pipeline {
       steps {
         echo 'Hello stage 2'
       }
+    }
   }
 
   post {
