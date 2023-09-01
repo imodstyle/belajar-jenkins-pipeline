@@ -2,10 +2,9 @@ pipeline {
   agent none
 
   environment {
-    AUTHOR = "Eko Kurniawan Khannedy"
-    EMAIL = "echo.khannedy@gmail.com"
-    WEB = "https://www.programmerzamannow.com"
-  }
+    AUTHOR = "iModStyle"
+    EMAIL = "donnyrahardika@gmail.com"
+    }
 
 //  triggers {
 //    cron("*/5 * * * *")
