@@ -109,7 +109,7 @@ pipeline {
     stage("Prepare") {
 
       environment {
-        APP = credentials("eko_rahasia")
+        APP = credentials("donny_rahasia")
       }
 
       agent {
@@ -159,8 +159,8 @@ pipeline {
 
         script {
           def data = [
-              "firstName": "Eko",
-              "lastName" : "Khannedy"
+              "firstName": "Donny",
+              "lastName" : "Rahardika"
           ]
           writeJSON(file: "data.json", json: data)
         }
@@ -175,7 +175,7 @@ pipeline {
       input {
         message "Can we deploy?"
         ok "Yes, of course"
-        submitter "pzn,eko"
+        submitter "imodstyle,Donny"
         parameters {
           choice(name: "TARGET_ENV", choices: ['DEV', 'QA', 'PROD'], description: "Which Environment?")
         }
@@ -203,7 +203,7 @@ pipeline {
       }
       steps {
         withCredentials([usernamePassword(
-            credentialsId: "eko_rahasia",
+            credentialsId: "donny_rahasia",
             usernameVariable: "USER",
             passwordVariable: "PASSWORD"
         )]) {
