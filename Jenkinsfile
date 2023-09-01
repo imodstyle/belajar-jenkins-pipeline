@@ -1,5 +1,9 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'JenkinsAgent1'
+    }
+  }
 
   environment {
     AUTHOR = "iModStyle"
