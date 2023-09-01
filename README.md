@@ -1,5 +1,5 @@
-# Belajar Spring Dasar
+# Belajar pipeline Jenkins
 
-by Programmer Zaman Now
+by Programmer Zaman Now, edit by imodstyle
 
 # Trigger jenkins
