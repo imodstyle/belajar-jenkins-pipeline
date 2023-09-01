@@ -8,10 +8,14 @@ pipeline {
 
   stages {
     stage('Stage 1') {
-            steps {
-                echo 'Hello world!' 
-            }
-        }
+      steps {
+        echo 'Hello world!' 
+      }
+      }
+    stage('Stage 2') {
+      steps {
+        echo 'Hello stage 2'
+      }
   }
 
   post {
